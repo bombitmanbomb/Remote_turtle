@@ -1,0 +1,5 @@
+local arg1 = ...
+rednet.open("back")
+rednet.broadcast("up")
+rednet.broadcast(tostring(arg1))
+rednet.close("back")
