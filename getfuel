@@ -1,0 +1,5 @@
+rednet.open("back")
+rednet.broadcast("getfuel")
+id, msg = rednet.receive()
+print("Fuel level: "..msg)
+rednet.close("back")
