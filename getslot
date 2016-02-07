@@ -1,0 +1,5 @@
+rednet.open("back")
+rednet.broadcast("getslot")
+id, msg = rednet.receive()
+print("Current slot: "..msg)
+rednet.close("back")
