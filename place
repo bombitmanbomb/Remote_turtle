@@ -1,0 +1,3 @@
+rednet.open("back")
+rednet.broadcast("place")
+rednet.close("back")
